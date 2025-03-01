@@ -1,0 +1,85 @@
+**Module 2
+- Knowledge Quiz
+	- Suggested Video
+- Chapter 1 - Circuit Variables
+- Concepts
+	- Beginning of EE
+	- Currents and Voltage
+	- Power and Energy
+	- Passive Sign Convention
+	- Conservation of Energy
+- [https://ufl.instructure.com/courses/516705/files/?preview=89901332&sort=user&order=desc](https://ufl.instructure.com/courses/516705/files/?preview=89901332&sort=user&order=desc) 
+- # Circuit Variables and SI Units
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcE_LcvY69eeoUf05BKx_QpjHPmWQjE7FleT8KeGzLrtyEhl_HHf_3hcZ-V-5hg0cX9SB5YWXGz7QO9aBW0yJsFGml9NQh3mAXnB6PN1JaneyXQJ5vDLq3C2eYWkvY2QppWTe8YKw?key=kGN7axNPXDaTWd6P68wVCHex)
+	    
+- # Prefixes and Scientific Notation
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfHYY-vXZ23-yHyd9uIK6WQXvGJ9lnjLVyDwCXvt_o0dpwa4TlIPWUSRz1NuiCZIxErcxYA1L3iPMuWpcdlzcMSuPSdWd7a13MJvBCXuWQMjCO5HXhOheOE83iLH9MNpkQh78Qe?key=kGN7axNPXDaTWd6P68wVCHex)
+    
+
+- # Current and Voltage
+- Naming Conventions
+	- General use: Lower case letters
+		- i, v, or i, v,  may or may not be time varying
+	- Time varying (t)
+		- i(t) and v(t) are time varying (non-constant)
+	- Not time varying (DC): capital letters
+		- I, V, are DC (constant) values
+	- Bold: Something special (matrix, vector, phasor version of i(t), Laplace or Fourier Transform, etc.) **I V**
+- # Physics behind Current and Voltage
+	- The concepts of electric charge is the basis for describing all electrical phenomena
+	- In circuit theory, the separation of charge creates an electric force (voltage), and the motion of charge creates an electric fluid (current).
+	- Electric charge is bipolar, meaning that electrical effects are described in terms of positive and negative charges
+	- Electric charges exist in discrete quantities, which are integer multiples of the electronic charge, $1.6022 * 10^{-19}$
+	- Electrical effects are attributed to both the separation of charge and charges in motion
+- # Current
+	- The electrical effects caused by charges in motion depend on the rate of charge flow. The rate of charge flow is known as the electric current, which is expressed as $i = \frac{dq}{dt}; \space q(t) = \int_0^ti(x)dx$, where:
+		- i = the current in amperes (A).
+		- q = the charge in coulombs (C)
+		- t = the time in seconds (s). 
+- # Voltage
+	- Whenever positive and negative charges are separated, the energy is expended. Voltage is the energy per unit charge created by the separation. We express this ratio in differential form as $v = \frac{dw}{dq};\space w=\int v \space dq$
+- # Power and Energy
+	- Mathematically, power is energy per unit time and is expressed in the form of a derivative, $p = \frac{dw}{dt}$
+		- p = Power in Watts (W)
+		- w = Energy in Joules (J)
+		- t = Time in Seconds (s)
+	- 1 W is equivalent to 1 J/s
+	- The power associated with the flow of charge follows directly from the definition of voltage and current$p = \frac{dw}{dt} = ( \frac{dw}{dq} ) ( \frac{dq}{dt} ) = vi$
+	- Energy in integral form: $w = \int_0^tp(x)dx$
+- # Comparing Gravitational Potential Energy to Electrical Energy
+	- Another way to think about voltage
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdSceqwguTaaWDhD4yr0yJewEz4pE2RMpM5RbJvPBi01vLp5WWZo38tmAeJdhEBAVk3JWlDiMxYq4KqQrmjzrEZYBrOVCO7rWShy8wVtlkKOEAiC4Ehq6fXGNLSG8Zle6SJY_lsfQ?key=kGN7axNPXDaTWd6P68wVCHex)
+	- Assume mass is analogous to charge, then voltage is analogous to height
+	- Voltage is a measure of electric potential, light height is a measure of gravitational potential
+- # Assumptions for Circuit Theory
+- Three basic assumptions permit us to use circuit theory to study a physical system represented by an electric circuit
+	- 1. Electrical effects happen instantaneously through a system.
+		- Electric signals travel at or near the speed of light
+		- For physically small systems, electric signals affect every point in the system simultaneously
+		- A system that is small enough so that we can make this assumption is called a lumped-element system
+	- 2.  The net charge on every component in the system is always zero. Thus, no component can collect a net excess of charge.
+	- 3. There is no magnetic coupling between the components in a system
+- # Lumped Element Circuit/ Passive Sign Convention
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdw4loA0MsQXkZ13jP5g_Riab2QpFnQ-suBwdwf2Bhca6eeysmacx_DERhhoEGmK3mKvGkOIwLUd5W3gNPJYwWsmFoUKOC9KkAWuEC--nkrNu5fTfdXnJRfzHWttkygHqZlT20X?key=kGN7axNPXDaTWd6P68wVCHex)
+	- Positive current flows from the positive terminal of a voltage source (active circuit element)
+	- Positive current will flow into the positive terminal of a resistor (passive circuit element)
+- # Passive Sign Convention
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeJcQNZ0q2Mf8zoOJvN8KlnElsfXiz0Myh3kkfcIMyWYjoHpLdaFe8pXJ_6CqGpcy82fX-hI3-D4n7XipCpKhoLAoDw5jeMzenO16CQAZxO4UVwDltV7A8sVvvkmHb_RyD4TSzTQw?key=kGN7axNPXDaTWd6P68wVCHex)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe8Mz4_HeMPhiX62w8N_OmNTIilVPuc8yF2Eb3JQuuHrjvaLjY5OpPxFO2BsGZ71yg4vVlUZ4lToAxJwN_rGzYr1i3u9TE5U_-E_MRyYsEujN6k5xrTTHR0bjA7qCHC7QAEhQeKtg?key=kGN7axNPXDaTWd6P68wVCHex)
+    
+	- The battery and resistor can be abstracted to ideal basic circuit elements (blocks)
+	- An ideal basic circuit element has three attributes 
+		- 1. It has only two terminals, which are points of connections to other circuit components
+		- 2. It is described mathematically in terms of current and/or voltage
+		- 3. It cannot be subdivided into other elements
+
+- # Passive Sign Convention - Power
+	- Whenever the reference direction for the current in an element is in the direction of the reference voltage drop across the element (as in the figure), use a positive sign in any expression that relates to voltage in the current. Otherwise, use a negative sign. 
+    
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd9sClSItqnMBGYoD2B834t1QjiWVI9bos7iCK-PYMvzkXSqeiGfyCPnv0jQwpHlqFv5NtBi60ivLq2h3mhKvKA7HIH8kf9FBmmCZsoh53QlUDd53x_f3A9I-J_aYa95npbK9ngJQ?key=kGN7axNPXDaTWd6P68wVCHex)
+	- Interpreting Algebraic Sign of Power:
+		- If the power is positive (that is, if p > 0), power is being delivered to the circuit element represented by the box. Or the circuit element is absorbing power.
+		- If the power is negative (that is, if p < 0), power is being extracted from the circuit element or the circuit element is supplying power, (additional book terminology – developed power)
+- # Conservation of Energy
+	- Using passive sign convention, calculate the total power of the system
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTln8S4QXa_SR2ve4xWDrzw8A3N6WQKZZUhcYZw_HsH5uiyakWPo3XPKnOh9y1Q6jOT5wQ0hNCWDiH-Tm3NZVBya80AC0-I8VYsyn2BgnBNe1rwZni83Hg28gUsNTG6X3JpM4z?key=kGN7axNPXDaTWd6P68wVCHex)
+- # Examples in M2-Ch1-I-V-Power-Energy.pdf**

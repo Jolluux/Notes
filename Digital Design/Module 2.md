@@ -1,0 +1,182 @@
+
+**Combinational Logic 1**
+**Brown and Vransic: Chapter 2.1-8, Appendix B.1-4**
+**Module 2 - Combinational Logic 1**
+- MOS FET Transistor
+	- Metal
+	- Oxide
+	- Semiconductor
+	- Field Effect Transistor
+	- We can combine transistors into logic gates
+	- We can abstract away the device level details in this course
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeF9SMY4p6xGKx4xF9vr8zE-8OyMmNzmdG6mbArZlOn1FilQ3IkxJxQP-xwh2pw_EK3CYgpBAPWMNc1up3q5WXxgGcx-OJIe1DlBu8ochAwKgfKGV920N0xVwuu0hJR3TPd80QH2A?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- NMOS and PMOS Transistors
+	- NMOS transistors and PMOS transistors are made of different materials.
+	- A NMOS transistor conducts current between the drain and source when a voltage is applied to a gate. 
+	- NMOS is good for delivering a low voltage, PMOS is better at delivering a high voltage.
+	- Essentially, both can be used as a switch. 
+	- The voltage when the gate is turned on is called threshold voltage.
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc2CAmBsp0QMoBTB8GGEf0peL-pKF4XlBF9GBs8u1i32X1JNf2YzV21Zu_8SdMiS4qO8QxIyzMsoCBH3keC-QEYtPYBiEWaZEzcX1rxujjiSnyBaIz_Pc0DxWzCfZ6iCdoyhjOg?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- How does a Transistor Work? 
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeSmejpMaA9oHvB-wxstzsmWh9um0X5j08Xr_rjvac2E5E4Zf1BSxJQNCbW0LuriyRaRQ4lBrASVjgZ_v1wLSkzAPKV4dvc5ZJ4WtF3R43Gv3-7UiRnSVCWEv5H6Kl4NHWvQM3Tng?key=NtDwCoAcev7UtI2NKKt_hyHM)
+	- Electrons must flow for the light to shine
+	- The light can be turned on/off by turning on/off the light switch
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcKIm5qv1vaIGcwRzD_VoxeigpxuCwh_gY_xgAfx1C0YYSlQlGXSFlyaHpioZcsg0L31IJoXXUXAht8BEaU5xrrfzUtSAw_jZr1XFTkCSye7vbHMb-UsuUErpcJTKfIdpHAUe3kxQ?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- The Inverter
+	- PMOS is good at pulling up output to VDD
+	- NMOS is good at pulling the output down the output to GND
+	- PMOS + NMOS = CMOS
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXckXS7Nw6mejufwqcmXcyDPAwtu-Xs3rPSZLSGgtC60VIkMkJKlpl93tGD-05yrNRMAJEcm0fzd5vq4lrMQSedjuiCVElt-QzC4QXgnr8Up8jkzkoUExSA8Z8IjbYSJUmjCzVGODQ?key=NtDwCoAcev7UtI2NKKt_hyHM)
+	  CMOS realization of a NOT gate![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcYbcR8Q86cpfoqVNG_9fcaKcozmRc7g9IO0Mxbs-Y2bN8_0M_WjSWDtbhBo5IwDEsTHXsAYi0iqgGu2x_NseRZqwe5IwmcSj7cDDTSAWkL132CLoyXzY39gdsAV7ScCg?key=NtDwCoAcev7UtI2NKKt_hyHM)  $V_x = 0V, V_f = 3V$, and vice versa
+
+	- Interpret 0 as 0V and 1 as 3V for truth table
+	- Making Logic Blocks Using CMOS Tech
+	- Modern Computers combine nMOS and pMOS transistors into
+	- Complementary MOS (CMOS) technology
+- CMOS NAND Gate
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf_a-5bdK9m32ZzoqEEOsFaREn3brCh5gfX_0QrDZp9qfOZxVbcxaBD2b5TcJdhcM3dJ3Xu0mMC9NU3DBtC3r26sQCkEz30eqxcAzV8modsSpPrqAmPy7nohJCq8loP8cBKC8Vu?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- CMOS NOR Gate
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXddgDkJ2XKgE-3eBIGJl12aNIWykI3SOnW09WmAvTQfO_37rHW4IneiukHj7Sx7Y_y0-WaUhrU6sUSKMmoicoyP49ttRA7Cj3OlxIQy2B_VgXaMh7WOB4K9nTP7YKCYSOXrp1GVFw?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- CMOS And Gate
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd9C-GBISWS6DHiE74VCoFgfeLDSCekwl5ZIptHPwtRBJbr4e5pIPch_9iy7Cj_CNh0dUX63NGhqE5VGwJhBMwQlaob6E6Q7nwfViwJGyiZpDppcrWvB_FwQl4LcFDRn2OdkARW?key=NtDwCoAcev7UtI2NKKt_hyHM)
+    
+	- The reason for the second VDD is that when x1 and x2 are true, you end up with voltage Vdd-Vd, the threshold voltage, and it requires an inverter to get the full voltage Vdd.
+- CMOS Logic Gates
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_shBomgru4EbtcaOPWMd04zHQQwRdj9bCpzNzrTgqmH50hfazobgKAyktr8pGiFPk88ZIllpBYqSZ8vQKZjPAvgMCegfMXm2p3sPCyEL-PVLkD35w-MveiaRSJfgENXkDlrberQ?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- Challenges with Larger Gates
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaoQL61W085z32Z12dfzWEhEFcGI_6XAp7ZA_nyIbWV4QyUhEGk_FMcsELOEl1Tu0PLPyFe0x4Va2prgF1rQ_IAsUcZMTlPLx4bWWyPWBlxUxoV7eANB5GbAp7b4fT_wfdecUeWw?key=NtDwCoAcev7UtI2NKKt_hyHM)
+	- Elmore delay model
+	- Delay is proportional to the square of the number of inputs
+- Other Logic Styles
+	- The resistor is implemented using a “weak” always on PMOS transistor
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXccQReKMocpkVqipkd05QdpwL_M4R-wWVe3IA_8ejhu1t-vJlwIfy77odaacSsLZmzxMub6xMCWuNw8M2Hy0WuKBsEQtU0_pA4QbmSQVtI4-Adc2bplDeckoClZ8hQC5ON-k1hK?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- Transmission Gate
+	- Pass transistor logic
+	- No connection to VDD?
+	- Hardware efficient implementations of:
+	- Selectors/muxes    
+	- Busses
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQktOrH-E8x-AdsV1IiN4b-3hcmRCQOV22NZFChEYxbQZ1q2JwfVATPizieA6GRfxDi4EMvQAGf1dykljrl8Z8mJA_JTf5v-O6kk_mxHDY2lTVrszLi4HrJ8dRbPbAOMg1_GCPaA?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- Power Consumption
+	- Dynamic Power Consumption
+		- $C * V^2 * f$
+		- C = capacitance
+		- V = supply voltage
+		- f = switching frequency
+	- Static Power Consumption
+		- $V * I_{leakage}$
+	- Energy Consumption
+		- $Power * Time$
+- Logic Gates
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfd-qG6E6I9cUTcDRFeM26UGg_hfAPPYTElOQVJDA8-KsW5uhyb23q6MFwhb2YYkucvPrIDa6DST1CdYkidOfI9g_jHj_2QFpoOv6vWafhUNF0ObiolR0o-iFh-NApk64nPSizKfg?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- Building Logic Circuits and Digital Systems
+	- A logic circuit is composed of
+		- Inputs
+		- Outputs
+		- Functional specification
+		- Timing specification
+	- Hierarchical structure
+		- Connect components together to form digital systems
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe_1vw2xVWsDiPUdCtPoLlzlZvFi6mR7r5qgBVqv6k4KrlvZ8lBheDd_1RCgxqQ9MrkZokvYZXy2hygyPznZOdyl07guyqbRmYXKTHQ7OAn1jybUvyekwwlaWUlxXTKWHonTgeeaA?key=NtDwCoAcev7UtI2NKKt_hyHM)
+		    
+		
+- George Boole
+	- Boolean Algebra 👍
+- Boolean Algebra
+	- You know this
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc9D1xBfRdkBnHoKLtjaKEgcf3DUJFRCrv3a4O2AWA2cOaesNago7_TRVUNgKyRz0CvqN0Y4NcDu_kQHSr9PoJ5BXJi3KgkeOx7x-AZhu0iCAU9I8irbxKO0tAZnIhB2iiADt6Czw?key=NtDwCoAcev7UtI2NKKt_hyHM)
+    
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc6nI-Webplv6aHyE5uNmAmYqOON8TiNRedHAfQScbr9aS0WB9wHHRJ3Vc0-hytdtfGWAXE75olsrrJUmGDaFCUUWExZWju5aIHE1BK5Tmsr-rLICRsuPHebjj09WifEc5Xkji_xQ?key=NtDwCoAcev7UtI2NKKt_hyHM)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfKTsilg2O8REXdl5qElAY-mhWRxF8Q3RuwOoqNO3qlqs0zKax52HP01u6WRg3zmBHbh9lKj2Z0J7oUE5lZ2gN5dzwLWcIakTd3EAMj4YHtzsx5_737U6m9-tGCINmoscgl9QOs?key=NtDwCoAcev7UtI2NKKt_hyHM)
+- Boolean Spaces
+	- KMaps
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXddmSwkaoONppmpwzJn01bgB7toQEn78LB-KdoNfFH0JTcIWb3D0LAERuHDyTntkICDV5ve69yvLVrKgUESK4hlfQTAsEX-hQ16rCttBMwyNphrXl5cpaPP-LdVVa68otun1A8Cbg?key=NtDwCoAcev7UtI2NKKt_hyHM)
+	- Boolean space of n variables is the set of all possible values that the variables can assume
+	- Can be represented as an n-dimensional unit hypercube
+- Boolean Functions
+	- Boolean Function: $f(x) : B^n \rightarrow B$
+	- $x = x_1, x_2, ..., x_n$ are variables
+		- $x_i \space \epsilon \space B$
+	- On-set of F
+		- $\{ x \space | \space f(x) = 1 \} = f^1 = f^{-1}(1)$
+	- Off-set
+		- $\{ x \space | \space f(x) = 0 \} = f^0 = f^{-1}(0)$
+
+	- Boolean functions are also called Logic Functions
+    
+		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfMqSxTZica5UZ8GNhR3lj_pUhd1auMCvZ9HaLKNG-GDspdaQaqL3uzeg7xMa37rjs5Ggl7USUTHXkxBv-4hhfnrxXbuP1ftKToCi0D9rCFsnqadYh5H_4S6yo3vy_8GdLzaWSq?key=NtDwCoAcev7UtI2NKKt_hyHM)
+	- Question: How many distinct logic functions of n variables exist?
+		- Hint: Think of how many ways you can color the vertices of a Boolean cube with 2 colors.
+- Representations of Boolean Functions
+	- Truth table
+	- K-map
+	- Boolean Hypercubes
+	- Boolean formula
+		- SOP
+		- POS
+	- Binary Decision Diagram
+	- Combinational circuits (gates)
+- Truth Table
+	- Truth table of a function $f : B^n \rightarrow B$ is a tabulation of its values at each of the $2^n$ vertices of $B^n$ 
+	- The truth table representation is
+		- Canonical
+		- Intractable for large n
+	- ![[Pasted image 20250127083718.png]]
+- Boolean Formula
+	- Boolean functions can be represented by formulae defined as well-formed sequences of 
+		- Literals x, x'
+		- Boolean operators OR, AND, NOT
+		- Parentheses
+	- Examples
+		- $f=x_1x_2'+x_1'x_2 = (x_1+x_2)(x_1'+x_2')$ 
+- Sum of Products
+	- Any Boolean function can be represented by a sum of products
+		- $f = ab + ac + bc$
+	- Can also be thought of as a set of cubes
+		- $F = \left( ab,ac,bc \right )$ 
+	- A set of cubes that correctly represents f is called a **cover** of f.
+	- A function may have several different SOP representations or covers
+	- Example:
+		- $F_1 = \left ( ab,ac,bc \right )$ and
+		- $F_2 = \left ( abc,a'bc,ab'c,abc' \right )$ 
+		- are possible covers of the Boolean function:
+			- $f = ab + ac + bc$
+	- A sum of products representation for a function where each product is a minterm
+		- For a function of n variables, each product has n literals representing all n variables
+- Product of Sums
+	- Product (conjuction) of terms, each of which is a sum (disjunction) of literals
+		- e.g. $f = (a + b + c)(a+b+c')(a'+b"c')(a'+b'+c)$ 
+	- One-to-one transformation from SOP of f to POS for f' (complement of f)
+		- Follows De Morgan's law
+	- From truth table, use off-set to construct POS representation
+- Representations of Boolean Functions
+	- Important questions to ask of any representation
+		- Scalable (can represent large functions)?
+		- Canonical?
+			- If two functions are the same, then their representations are isomorphic
+		- Efficient to manipulate?
+- 2-Level Logic Realization
+	- Any function can be realized using:
+		- AND-OR gates
+		- NAND gates
+		- NOR gates
+- Programmable Logic Arrays
+	- ![[Pasted image 20250127084858.png]]
+- Why Multi Level Logic?
+	- 2-Level logic is expensive in terms of hardware
+		- N-bit adder requires 2^n product terms
+	- Designs may be provided in multi-level form
+	- Interested in explored trade off between different metrics
+- Logic Synthesis
+	- Many different hardware realizations of the same function
+	- Difficult for designers to specify "best implementation"
+		- Metrics: performance, power, area
+	- Synthesis tools automatically generate efficient implementation
+		- Minimization of k-map
+		- Select "largest rectangle"
+	- Optimization Strategy
+		- Technology independent optimization
+		- Technology mapping
+	- More details
+		- Potentially later this semester
+		- Special Topics : CAD of VLSI
+ 

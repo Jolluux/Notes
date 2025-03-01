@@ -1,0 +1,25 @@
+
+Module 1 - Introduction
+- System Design Objectives
+	- Objectives:
+		- Performance
+		- Energy Efficient
+		- Sustainability
+		- Security
+	- Solutions
+		- Top-Down - Domain Specific Computing
+		- Across the Computing Stack: Co-Design
+		- Bottom-Up - New Devices
+- Taxonomy
+	- Microprocessors
+		- Minutes to deployment
+		- High-level programming (C, Java, etc( - Designed using Verilog/VHDL
+		- Executable File
+	- FPGAs
+		- Days to deployment
+		- Verilog/VHDL
+		- Bitfile
+	- ASIC (Application Specific Integrated Circuit)
+		- Months to deployment
+		- Verilog/VHDL
+		- Design masks

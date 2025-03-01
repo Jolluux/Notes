@@ -1,0 +1,126 @@
+**Signals and Systems
+Prof Harley
+# Sinusoids - Signals and System Unwrapped [10:45]
+- Sinusoids
+	- Lifeblood of signal processing, communications, and controls. 
+		- Understand…. The circle :0 (unit circle)
+- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcn0d3FcqVeDf9Cp_UBpPJde4v3GSy93F2vumYQi_8ZQnuisBU6DvxsjxbKQNVxeIfSJzTDbo45hrXTmQ6mykv7tjQNrFOsWVNc6bEQj4ksKPME3umoNo-QASfqHpmzDrbt_AqXKA?key=Ea7DTBluRwCv6_Ty4eVDR2vQ) 1 Period of a cos
+	- Use radians in this class, pi, pi/2, 3pi/2, 2pi, the works
+	- cos() is equal to the value of X in the circle 
+-  ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcCfnN9QwSDJtJuWlwHKF5MSXBwQfIuXQ2-F0R1mj15TDdF1q_pm3ELl7vSv3oYHdOOYgYzWg8QYMSI8ha98cDpjK1EL3YWiG2nD-VGVzlfPcpAViQ_qP-jaC720t0ww4UACCVe8A?key=Ea7DTBluRwCv6_Ty4eVDR2vQ) 1 Period of sin
+	- sin() is equal to the y value in the circle
+	- Polar coordinates
+- $Acos(\omega_0t + \theta)$ - Lifeblood atm
+	- A is how high and low the Y axis goes (cartesian coordinates)
+	- Angular frequency ($\omega$) is how quickly we’re going around the circle
+		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaI8EpoFaTPYaMmtNrakYGo4m6RMf0OG7I4x6nh6FjyNJzv1xjCwKYNrMlScwb7HlQsI_TgozvKZSvog49nk0Uf6aLdB0YHnCCe7iDV7n66tgsVQWY8eH_48x1PyuW47wE4LfVMw?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+	- Phase  is where we start on the circle
+- *Complex*  sinusoid
+	-   $A^{\pm j(\omega t+ \theta )} = Acos(\omega t+\theta) \pm Ajsin(\omega t+ \theta)$
+	- From diff eq, the cos makes up the real part, x-axis, and the sin makes up the complex/imaginary part, y-axis.
+	- This equation is also a circle, but in real and imaginary space
+	- Super helpful to make math easy 🙂
+    
+
+# Introduction [29:46]
+- Signals
+	- Math representations of physical phenomena that usually carry information
+	- Functions of one or more variables
+	- Usually can be plotted, signal = function, time to plot
+- Continuous-”time” Signals
+	- Signals defined for a continuum of values (domain of functions is a continuum)
+	- Examples
+		- Current and voltage in RC circuit (1-D)
+		- Voice (1-D)
+		- Topology of terrain (2-D)
+		- Temperature at a point in space (3-D)
+		- Temperature at a point in space and time (4-D
+	- Notation: s(t), s(x,y), etc.
+-  Discrete-”time” Signals
+	- Signals defined only for a discrete set of values (domain of functions is a discrete set)
+	- Examples:
+		- A sequence of binary bits (1-D)
+		- Samples of continuous-time voice signal (1-D)
+		- Computer bit-map images (2-D)
+	- Notation: $S[n]$, $S[m,n]$, etc.
+- Sample continuous-time signals to obtain discrete-time signals
+	- Usually sample with regular intervals called sampling period $T_s$
+	- $S[n] = S(nT_s)$    
+- Systems
+	- A process that takes a signal as input and produces another as output
+	- Examples: 
+		- Electric circuits
+		- Car suspension
+		- Presidential election
+		- Zip file compression program
+		- Sampler
+	- Continuous-time Systems
+		- I/O are continuous=time signals
+	- Discrete-time Systems
+		- I/O are  discrete-time signals
+	- Hybrid systems
+	- Mathematically describe a system as an operator T
+		- $y(t) = Tx(t)$
+		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfsygYsesSMsxZvZ5u1IXh7GTPnTaeCinDCSb9boi7cMLeiw3mvH6Ut6_A9E8D06cEj9OPyvYXBixvcD46750AWqSFkbGhlYjhac-cY7P_gOFzMyXFjNPFr-eBmOKnFRB4xsWOCGQ?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+- Why bother?
+	- FUN!!!
+- Useful applications: everything, everywhere
+		- iTune
+	- Photoshop
+- Most important concepts in EE!!!
+	- Frequency spectrum
+	- Filtering
+	- Feedback
+- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfUZ7ECiVeP0gbKlBdYnuEoAtzRZnK5g347zQ5Wg2mOccMZf8yqDDBXycfG9Rc47Yw8LqQ76BqkxJXWDQwvoddCtXjw4MrwamjRcVAsafmQImtUNufC3xBByXwmHC-Z8lMdxbF2vw?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+# Sinusoids [47:00]
+
+- Sinusoidal Signals
+	- $x(t) = Acos(\omega_0t+\phi)$
+	- A = amplitude
+	- $\omega_0$ = angular frequency
+	- $\phi$ = phase
+
+- Periodic in t, with period $\frac{2\pi}{\omega_0} = T_0$    
+- $x(t+T_0) = x(t)$, for all t, to be periodic
+- $\frac{\omega_0}{2\pi} = f_0 = cyclic frequency$
+- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXehO5P04C3qdbmOvsETcmtRhuXg5S4fOy8QHjyqCtIbe0p8GLVOjrWZPzzNEpHaPEc477QH9FpM3V3aYe4NjDShQi7RDkyGgokpRieQ6zNAFvAGBGO5zzblQKrxQOHg-THV3QcogA?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+	- If phi is positive, shift left, if negative, shift right
+	- If $T_0$ is small, $f_0$ is big, and inverse. 
+- Trig Identities to know
+	- $sin(\alpha \pm \beta) = sin(\alpha)cos(\beta) \pm cos(\alpha)sin(\beta)$
+	- $cos(\alpha \pm \beta) = cos(\alpha)(cos(\beta) \mp sin(\alpha)sin(\beta)$
+	- $2cos(\alpha)cos(\beta) = cos(\alpha - \beta) + cos(\alpha + \beta)$
+	- $\frac{dsin(\theta)}{d\theta} = cos(\theta)$
+	- $\frac{dcos(\theta)}{d\theta} = -sin(\theta)$
+	- $cos(\theta - \frac{\pi}{2}) = sin(\theta)$ 
+	- $cos(-\theta) = cos(\theta)$, even
+	- $sin(-\theta) = -sin(\theta)$, odd
+	- $\frac{dAcos(\omega_0t+\phi)}{dt} = -\omega_0Asin(\omega_0t+\phi) = A\omega_0cos(\omega_0t+\phi+\frac{\pi}{2})$
+- Timing Shift 🤯
+- For any signal s(t)
+- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd0TzF7WaOcr2z5IjpzfV-u7KNC6p62wlLgjPGIbehHXAoVY7ZH-qpmNO7QQdW0QSkkadgz91laBJCT_p0ec2XfWdEz13nZopOly2nMozh2zsQZAVYJQatJ0UVabJS96dEFXEZRqg?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+- $s(t - t_1)$ to shift left
+- $s(t + t_1)$ to shift right
+- $s(t \pm t_1) = Acos(\omega_0(t \pm t_1) + \phi) = Acos(\omega_0t+(\phi \pm \omega_0t_1))$
+- Time shift by $t_1$ = phase shift by $-\omega_0t_1$
+- $\phi = -\omega_0t_1 + 2\pi k$
+# Complex Sinusoids [35:06]
+- Complex (-valued) sinusoids
+	- $\zeta(t) = Ae^{j(\omega_0t+\phi)};\space j = \sqrt{-1}$
+- Euler’s Formula
+	- $e^{j\theta} = cos(\theta) + jsin(\theta)$
+	- Using euler’s formula, we can derive: 
+		- $Acos(\omega_0t+\phi) + Ajsin(\omega_0t+\phi)$
+	- $Re(\zeta(t)) = sinusoid$
+- $\zeta(t) = Ae^{j\phi} + e^{j\omega_0t}$
+	- $Ae^{j\phi}$ is the polar form of complex number, aka the phasor of $\zeta(t)$
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdT7e1C-j3B5_ayIgt--Th2ZYUlodGck2F6aRgf_qhfZj8MQ-6RKSZK_DEmmDOLj2T26oUSZm9BfLbPcarX0yTJE-nZGCny5psMgX92yqwjhYgzNkCZ2ZQPDsep8u_51S93hMeQjQ?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+-  Example:
+	- Turn long sinusoids into complex ones 🙂
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeSx-iC3HBUXL-ppG4lRQOcOIgGYine0Tvava2Y8YJMWM9Pna10fi5FMSk50cKcp5dBf97I2re4fk8O0sO_u3YrjLkAEKmnqX0jmG-7GXjoRjUbZGkit-LDlYpR5bC8uZKWt_Vruw?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+    
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdx680PgFh4SFO-yDXaC4oqZy30LNtxfpPT1bsSj48Idxzj3soWYtsdcnrOcMWIya4bxS6cnNGW9k-BT8lPU9_-xB3qyWW5VB7bda_teBO6tpQ9lNMoUfoX0-NUBOmlkg29JbvL?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+		- $A = Re^2 + Im^2$, Re = -1/sqrt(2), Im = j*3/sqrt(2)
+	- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdK9qhAS_m6vj9IdaLVmYrIi8nMXomx7-6Tjevj5iSU8XfZVmyHam2lbkVyTxO87bLVOe2k-jTYxyiLhUz7-G8wN9w3xhkAgTvULOU4Ij0yPWka0sPrKxHfFs62xLvhzwtpEbswZQ?key=Ea7DTBluRwCv6_Ty4eVDR2vQ)
+	- $\phi = tan^{-1}2(\frac{-1}{\sqrt{2}}, \frac{3}{\sqrt{2}})$, is a 2-input function to find which quadrant phi lies in, in the polar sphere, and the angle would be 180-phi
+	- `atan2` is the MATLAB function for this 
