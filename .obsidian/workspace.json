@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Circuits 1/Module 17.md",
-                "mode": "source",
+                "file": "Circuits 1/Module 16.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 17"
+              "title": "Module 16"
             }
           }
         ],
@@ -210,21 +210,20 @@
   },
   "active": "14e6f9cb126ed8a4",
   "lastOpenFiles": [
-    "Pasted image 20250228124213.png",
-    "Pasted image 20250228122956.png",
-    "Pasted image 20250228122352.png",
-    "Pasted image 20250228121758.png",
-    "Circuits 1/Module 16.md",
     "Circuits 1/Module 17.md",
-    "Pasted image 20250228105711.png",
-    "Pasted image 20250228105438.png",
-    "Pasted image 20250228104232.png",
-    "Pasted image 20250228104200.png",
-    "Pasted image 20250228104142.png",
+    "Images/Pasted image 20250228105438.png",
+    "Images/Pasted image 20250228104232.png",
+    "Images/Pasted image 20250228104200.png",
+    "Images/Pasted image 20250228104142.png",
+    "Images/Pasted image 20250227160747.png",
+    "Images/Pasted image 20250227160223.png",
+    "Images/Pasted image 20250227160032.png",
+    "Images/Pasted image 20250227155807.png",
+    "Images/Pasted image 20250227154253.png",
+    "Images/Pasted image 20250228124213.png",
+    "Circuits 1/Module 16.md",
     "Digital Design/Module 3.md",
     "Digital Design/Module 2.md",
-    "Pasted image 20250227160747.png",
-    "Pasted image 20250227160223.png",
     "Signals/Week 6.md",
     "Untitled",
     "Circuits 1/Module 0-1.md",
