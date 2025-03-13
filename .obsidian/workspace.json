@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Circuits 1/Module 21.md",
+                "file": "Signals/Week 9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 21"
+              "title": "Week 9"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4dc807915d7d7007",
@@ -165,13 +166,16 @@
       "circuit-sketcher:Create new Circuit Sketcher file": false
     }
   },
-  "active": "3903d39b666eb1d7",
+  "active": "3f0b00773821a621",
   "lastOpenFiles": [
+    "Pasted image 20250313091556.png",
+    "Pasted image 20250313091224.png",
+    "Pasted image 20250313090114.png",
+    "Circuits 1/Module 21.md",
     "Circuits 1/Module 17.md",
     "Circuits 1/Module 19.md",
     "Circuits 1/Module 20.md",
     "Circuits 1/Module 18.md",
-    "Circuits 1/Module 21.md",
     "Pasted image 20250307143935.png",
     "Pasted image 20250307143750.png",
     "Pasted image 20250307143429.png",
@@ -180,10 +184,8 @@
     "Pasted image 20250307142058.png",
     "Pasted image 20250307141913.png",
     "Pasted image 20250307141842.png",
-    "Pasted image 20250307140624.png",
     "Signals/Week 7.md",
     "Signals/Week 3.md",
-    "Images/Pasted image 20250305091250.png",
     "Signals/Week 4.md",
     "Signals/Week 2.md",
     "Signals/Week 1.md",

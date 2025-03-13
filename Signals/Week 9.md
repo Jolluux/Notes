@@ -16,4 +16,14 @@
 	* ![[Pasted image 20250311020912.png]]
 	* ![[Pasted image 20250311020918.png]]
 	* We've successfully done a z-transform, note the condition, it's called the "region of convergence"
-	* 
+
+# Pole-Zero Plot [10:50]
+* ![[Pasted image 20250313090114.png]]
+* The transfer function of a system can be shown as a pole/zero plot
+* Transfer Function
+	* $H(z) = \frac{\text{polynomial in z}}{\text{polynomial in z}} = \frac{y(z)}{x(z)}$ 
+	* zeros: z when H(z) = 0
+	* poles: z when H(z) = $\infty$
+	* Example plot:![[Pasted image 20250313091224.png]]
+* Example Pole-Zero Plot![[Pasted image 20250313091556.png]]
+* 
